@@ -246,6 +246,11 @@ git config --global user.name "Jyotiraditya Panda"
 git config --global user.email "jyotiraditya@aospa.co"
 fi
 
+if [[ $USER == "himanshu" ]]; then
+git config --global user.name "Himanshu Kharkar"
+git config --global user.email "himanshu.kharkar20@gmail.com"
+fi
+
 git config --global alias.cp 'cherry-pick'
 git config --global alias.c 'commit'
 git config --global alias.f 'fetch'
@@ -257,6 +262,7 @@ git config --global alias.rsh 'reset --hard'
 git config --global alias.logp 'log --pretty=oneline --abbrev-commit'
 git config --global alias.mlog 'merge --log=100'
 git config --global credential.helper 'cache --timeout=99999999'
+git config --global url."git@github.com:".insteadOf "https://github.com/"
 echo "Done."
 
 # Done!
